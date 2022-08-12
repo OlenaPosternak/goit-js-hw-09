@@ -23,8 +23,6 @@ function createPromise(position, delay) {
       }
     }, delay);
   });
-
-  localStorage.removeItem(`form-info`);
 }
 
 let delayTime = Number(formData.delay);
