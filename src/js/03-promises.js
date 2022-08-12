@@ -13,6 +13,8 @@ function onInputChange(event) {
 }
 
 function createPromise(position, delay) {
+
+
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
     setTimeout(() => {
@@ -38,3 +40,5 @@ for (let i = 1; i <= formData.amount; i++) {
 
   delayTime += Number(formData.step);
 }
+
+localStorage.removeItem(`form-info`);
